@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from "@/lib/gsap";
 import { events } from "@/data/events";
+import type { Event } from "@/types";
 
 export default function EventsGrid() {
   const gridRef = useRef<HTMLDivElement>(null);
@@ -36,7 +37,7 @@ export default function EventsGrid() {
           ref={gridRef}
           className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8"
         >
-          {events.map((event) => {
+          {events.map((event: Event) => {
             const date = new Date(event.date);
             const formattedDate = date.toLocaleDateString("en-US", {
               month: "short",

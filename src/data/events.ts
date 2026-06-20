@@ -11,7 +11,7 @@ export const events: Event[] = [
     description:
       "Unfiltered. Underground. No phones, no judgement, just the room and the sound.",
     lineup: ["DJ NOVA", "KICKDRUM", "VELVET STATIC"],
-    ccoverImage: "https://placehold.co/600x800/0A0A0A/E10F1F?text=TECHNOKIDS",
+    coverImage: "https://placehold.co/600x800/0A0A0A/E10F1F?text=TECHNOKIDS",
     ticketUrl: "#",
     status: "upcoming",
     tags: ["techno", "underground"],

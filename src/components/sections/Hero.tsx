@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { gsap, staggerFadeUp } from "@/lib/gsap";
+import { gsap } from "@/lib/gsap";
 import { ASSETS } from "@/lib/assets";
 
 export default function Hero() {
