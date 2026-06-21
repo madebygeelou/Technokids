@@ -1,9 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 
 const recapImages = [
-  "/assets/recap/recap-01.jpg",
-  "/assets/recap/recap-02.jpg",
-  "/assets/recap/recap-03.jpg",
+  "/assets/recap/tkrecappic1.jpg",
+  "/assets/recap/tkrecappic2.jpg",
+  "/assets/recap/tkrecappic3.jpg",
+  "/assets/recap/tkrecappic4.jpg",
+  "/assets/recap/tkrecappic5.jpg",
+  "/assets/recap/tkrecappic6.jpg",
+  "/assets/recap/tkrecappic7.jpg",
   // Add more paths here as you add more photos
 ];
 
@@ -47,7 +51,7 @@ export default function MediaReel() {
     <section className="bg-void py-16 overflow-hidden">
       <p className="font-mono text-xs uppercase tracking-widest text-accent px-6 md:px-12 mb-6 flex items-center gap-2">
         <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-        Inside Nite Kids
+        Inside TECHNOKIDS
       </p>
 
       {recapImages.length === 0 ? (

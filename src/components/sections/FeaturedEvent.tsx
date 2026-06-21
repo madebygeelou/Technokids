@@ -34,7 +34,7 @@ export default function FeaturedEvent() {
             Once dropped in, uncomment the <img> tag below and remove this placeholder div.
           */}
           <img
-            src="/assets/events/redemption-oddfellows.jpg"
+            src="/assets/events/redemptionflyer.jpeg"
             alt="Redemption at Oddfellows"
             className="w-full h-full object-cover"
           />

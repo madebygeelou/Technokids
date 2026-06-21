@@ -37,7 +37,10 @@ export default function Hero() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-40"
       >
-        <source src="/assets/video/hero-loop.mp4" type="video/mp4" />
+        <source
+          src="/assets/recap/backgroundwebsiteTKvideo.mp4"
+          type="video/mp4"
+        />
       </video>
 
       <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/60 to-void" />
@@ -53,7 +56,7 @@ export default function Hero() {
           className="flex items-center justify-center"
         >
           <img
-            src="/assets/logo/logo.png"
+            src="/assets/logo/TKlogo.png"
             alt="Technokids"
             className="logo-spin-once"
             style={{ width: "clamp(160px, 28vw, 340px)", height: "auto" }}
