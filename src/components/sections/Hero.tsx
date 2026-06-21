@@ -1,7 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 import { gsap } from "@/lib/gsap";
-import { ASSETS } from "@/lib/assets";
 
 export default function Hero() {
   const headlineRef = useRef<HTMLHeadingElement>(null);
@@ -23,47 +21,58 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen w-full flex flex-col items-center justify-center bg-void overflow-hidden">
+    <section className="relative min-h-screen w-full flex flex-col items-center justify-center bg-void overflow-hidden texture-grid">
+      <div className="absolute inset-0 glow-red" />
+
+      {/*
+        === MEDIA SLOT: HERO BACKGROUND VIDEO ===
+        Drop file at: /public/assets/video/hero-loop.mp4
+        Specs: H.264 mp4, max 1080p, 8-15sec loop, no audio, under 5MB
+        Once dropped in, uncomment the <source> line below.
+      */}
       <video
         autoPlay
         muted
         loop
         playsInline
-        poster={ASSETS.hero.poster}
-        className="absolute inset-0 w-full h-full object-cover"
-        onError={(e) => {
-          e.currentTarget.style.display = "none";
-        }}
+        className="absolute inset-0 w-full h-full object-cover opacity-40"
       >
-        <source src={ASSETS.hero.video} type="video/mp4" />
+        {/* <source src="/assets/video/hero-loop.mp4" type="video/mp4" /> */}
       </video>
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-void" />
+
+      <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/60 to-void" />
 
       <div className="relative z-10 flex flex-col items-center text-center px-6">
+        <p className="font-mono text-[11px] text-accent uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+          Las Vegas Underground
+        </p>
+
         <h1
           ref={headlineRef}
-          className="font-display text-warm uppercase leading-none"
-          style={{ fontSize: "clamp(48px, 12vw, 140px)" }}
+          className="font-display text-warm uppercase leading-[0.92]"
+          style={{ fontSize: "clamp(48px, 13vw, 150px)" }}
         >
-          Unfiltered.
-          <br />
-          <span className="text-accent">Underground.</span>
+          Technokids
         </h1>
 
         <p
           ref={subRef}
-          className="font-mono text-warm/80 text-xs md:text-sm uppercase tracking-widest mt-6"
+          className="font-mono text-warm/80 text-xs md:text-sm uppercase tracking-widest mt-5"
         >
-          Techno · Community · Las Vegas
+          Unfiltered · Underground · Community
         </p>
 
-        <Link
+        {/* TICKET LINK: pulls from Redemption event — update href if event changes */}
+        <a
           ref={ctaRef}
-          to="/archive"
-          className="mt-10 border border-accent text-accent font-mono text-xs uppercase tracking-widest px-8 py-4 hover:bg-accent hover:text-void transition-colors duration-300"
+          href="https://posh.vip/g/nite-kids-"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-10 bg-accent text-void font-mono text-xs uppercase tracking-widest px-9 py-4 hover:bg-fire transition-colors duration-300"
         >
-          Next Event →
-        </Link>
+          Get Tickets →
+        </a>
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">

@@ -23,14 +23,14 @@ export default function Manifesto() {
     );
   }, []);
 
-  const line1 = ["WE", "BUILD", "ROOMS"];
-  const line2 = ["WHERE", "EVERYONE"];
+  const line1 = ["WE. ", "BUILD. ", "ROOMS. "];
+  const line2 = ["WHERE. ", "EVERYONE. "];
   const line3 = ["BELONGS."];
 
   return (
     <section
       ref={ref}
-      className="bg-void min-h-[60vh] flex flex-col items-center justify-center px-6 py-24 text-center"
+      className="relative bg-void min-h-[50vh] flex flex-col items-center justify-center px-6 py-16 text-center texture-grid"
     >
       <h2
         className="font-display text-warm uppercase leading-tight"

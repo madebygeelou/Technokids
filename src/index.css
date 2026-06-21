@@ -15,6 +15,29 @@
   --font-mono: "DM Mono", monospace;
 }
 
+.glow-red {
+  background: radial-gradient(
+    ellipse 80% 50% at 50% 0%,
+    rgba(225, 15, 31, 0.25),
+    transparent 70%
+  );
+}
+
+.glow-red-bottom {
+  background: radial-gradient(
+    ellipse 80% 50% at 50% 100%,
+    rgba(225, 15, 31, 0.18),
+    transparent 70%
+  );
+}
+
+.texture-grid {
+  background-image:
+    linear-gradient(rgba(225, 15, 31, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(225, 15, 31, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:wght@400;500&display=swap");
 
 *,
