@@ -42,7 +42,9 @@ export default function Footer() {
       {/* Main footer grid */}
       <div className="relative px-6 py-12 md:px-12 grid grid-cols-2 md:grid-cols-4 gap-8">
         <div className="col-span-2 md:col-span-1">
-          <p className="font-display text-2xl text-warm uppercase">Nite Kids</p>
+          <p className="font-display text-2xl text-warm uppercase">
+            TECHNOKIDS
+          </p>
           <p className="font-mono text-xs text-muted mt-2">
             Unfiltered. Underground. Community.
           </p>

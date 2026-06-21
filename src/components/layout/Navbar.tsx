@@ -11,7 +11,7 @@ export default function Navbar() {
           <img src="/assets/logo/logo.svg" alt="Nite Kids" className="h-8 w-auto" />
         */}
         <span className="font-display text-xl tracking-wide text-warm uppercase">
-          Nite Kids
+          TECHNOKIDS
         </span>
       </Link>
       <nav className="hidden md:flex gap-8 font-mono text-xs uppercase tracking-widest text-warm">
