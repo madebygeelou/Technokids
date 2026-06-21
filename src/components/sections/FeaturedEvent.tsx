@@ -33,10 +33,11 @@ export default function FeaturedEvent() {
             Drop file at: /public/assets/events/redemption-oddfellows.jpg
             Once dropped in, uncomment the <img> tag below and remove this placeholder div.
           */}
-          <div className="w-full h-full flex items-center justify-center font-mono text-xs text-muted uppercase tracking-widest">
-            Flyer goes here
-          </div>
-          {/* <img src="/assets/events/redemption-oddfellows.jpg" alt="Redemption at Oddfellows" className="w-full h-full object-cover" /> */}
+          <img
+            src="/assets/events/redemption-oddfellows.jpg"
+            alt="Redemption at Oddfellows"
+            className="w-full h-full object-cover"
+          />
         </div>
 
         <div className="md:col-span-6 flex flex-col items-start">

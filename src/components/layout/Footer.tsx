@@ -74,7 +74,7 @@ export default function Footer() {
           </p>
           {/* SOCIAL LINKS: replace href="#" with real profile URLs */}
           <a
-            href="#"
+            href="https://www.instagram.com/technokidslv/"
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-xs text-warm/80 uppercase hover:text-accent transition-colors"
@@ -82,7 +82,7 @@ export default function Footer() {
             Instagram
           </a>
           <a
-            href="#"
+            href="https://www.tiktok.com/@nitekidslv_"
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-xs text-warm/80 uppercase hover:text-accent transition-colors"
@@ -97,10 +97,10 @@ export default function Footer() {
           </p>
           {/* CONTACT EMAIL: replace with real address */}
           <a
-            href="mailto:hello@nitekids.com"
+            href="mailto:nitekidslv@gmail.com"
             className="font-mono text-xs text-warm/80 uppercase hover:text-accent transition-colors"
           >
-            hello@nitekids.com
+            nitekidslv@gmail.com
           </a>
         </div>
       </div>

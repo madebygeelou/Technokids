@@ -37,7 +37,7 @@ export default function Hero() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-40"
       >
-        {/* <source src="/assets/video/hero-loop.mp4" type="video/mp4" /> */}
+        <source src="/assets/video/hero-loop.mp4" type="video/mp4" />
       </video>
 
       <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/60 to-void" />
@@ -48,13 +48,17 @@ export default function Hero() {
           Las Vegas Underground
         </p>
 
-        <h1
-          ref={headlineRef}
-          className="font-display text-warm uppercase leading-[0.92]"
-          style={{ fontSize: "clamp(48px, 13vw, 150px)" }}
+        <div
+          ref={headlineRef as any}
+          className="flex items-center justify-center"
         >
-          Technokids
-        </h1>
+          <img
+            src="/assets/logo/logo.png"
+            alt="Technokids"
+            className="logo-spin-once"
+            style={{ width: "clamp(160px, 28vw, 340px)", height: "auto" }}
+          />
+        </div>
 
         <p
           ref={subRef}

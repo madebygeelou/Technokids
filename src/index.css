@@ -14,6 +14,18 @@
   --font-display: "Anton", "Helvetica Neue", sans-serif;
   --font-mono: "DM Mono", monospace;
 }
+@keyframes spin-once {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo-spin-once {
+  animation: spin-once 1.2s cubic-bezier(0.16, 1, 0.3, 1) 1;
+}
 
 .glow-red {
   background: radial-gradient(
